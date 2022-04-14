@@ -1,11 +1,10 @@
-# dan-ji-xiao-zhu-iOS
-单机小助iOS版
+#单机小助iOS版
 
 # 编程语言
-Swift
+##Swift
 
 # 适配系统
-iOS13及以上
+##iOS13及以上
 
 # App模块
 ## 游戏推荐
