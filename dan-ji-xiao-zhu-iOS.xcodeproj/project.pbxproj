@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		573EC8852808397800D56983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8842808397800D56983 /* AppDelegate.swift */; };
 		573EC8872808397800D56983 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8862808397800D56983 /* SceneDelegate.swift */; };
-		573EC8892808397800D56983 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8882808397800D56983 /* ViewController.swift */; };
+		573EC8892808397800D56983 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8882808397800D56983 /* BaseViewController.swift */; };
 		573EC88C2808397800D56983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573EC88A2808397800D56983 /* Main.storyboard */; };
 		573EC88E2808397C00D56983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 573EC88D2808397C00D56983 /* Assets.xcassets */; };
 		573EC8912808397C00D56983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573EC88F2808397C00D56983 /* LaunchScreen.storyboard */; };
 		573EC89C2808397D00D56983 /* dan_ji_xiao_zhu_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC89B2808397D00D56983 /* dan_ji_xiao_zhu_iOSTests.swift */; };
 		573EC8A62808397D00D56983 /* dan_ji_xiao_zhu_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8A52808397D00D56983 /* dan_ji_xiao_zhu_iOSUITests.swift */; };
 		573EC8A82808397D00D56983 /* dan_ji_xiao_zhu_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8A72808397D00D56983 /* dan_ji_xiao_zhu_iOSUITestsLaunchTests.swift */; };
+		573EC8B72808441400D56983 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8B62808441400D56983 /* TabBarController.swift */; };
+		573EC8BA2808470D00D56983 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8B92808470D00D56983 /* HomeViewController.swift */; };
+		573EC8BF280850EA00D56983 /* BuzzInformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8BE280850EA00D56983 /* BuzzInformationController.swift */; };
+		573EC8C12808512100D56983 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8C02808512100D56983 /* MineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,7 @@
 		573EC8812808397800D56983 /* dan-ji-xiao-zhu-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dan-ji-xiao-zhu-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		573EC8842808397800D56983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		573EC8862808397800D56983 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		573EC8882808397800D56983 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		573EC8882808397800D56983 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		573EC88B2808397800D56983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		573EC88D2808397C00D56983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		573EC8902808397C00D56983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		573EC8A12808397D00D56983 /* dan-ji-xiao-zhu-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dan-ji-xiao-zhu-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		573EC8A52808397D00D56983 /* dan_ji_xiao_zhu_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dan_ji_xiao_zhu_iOSUITests.swift; sourceTree = "<group>"; };
 		573EC8A72808397D00D56983 /* dan_ji_xiao_zhu_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dan_ji_xiao_zhu_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		573EC8B62808441400D56983 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		573EC8B92808470D00D56983 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		573EC8BE280850EA00D56983 /* BuzzInformationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzInformationController.swift; sourceTree = "<group>"; };
+		573EC8C02808512100D56983 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +107,7 @@
 		573EC8832808397800D56983 /* dan-ji-xiao-zhu-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				573EC8842808397800D56983 /* AppDelegate.swift */,
-				573EC8862808397800D56983 /* SceneDelegate.swift */,
-				573EC8882808397800D56983 /* ViewController.swift */,
-				573EC88A2808397800D56983 /* Main.storyboard */,
-				573EC88D2808397C00D56983 /* Assets.xcassets */,
-				573EC88F2808397C00D56983 /* LaunchScreen.storyboard */,
-				573EC8922808397C00D56983 /* Info.plist */,
+				573EC8B42808436400D56983 /* Modules */,
 			);
 			path = "dan-ji-xiao-zhu-iOS";
 			sourceTree = "<group>";
@@ -125,6 +127,72 @@
 				573EC8A72808397D00D56983 /* dan_ji_xiao_zhu_iOSUITestsLaunchTests.swift */,
 			);
 			path = "dan-ji-xiao-zhu-iOSUITests";
+			sourceTree = "<group>";
+		};
+		573EC8B42808436400D56983 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				573EC8C22809093400D56983 /* Public */,
+				573EC8BD280850D800D56983 /* Mine */,
+				573EC8BC280850B000D56983 /* BuzzInformation */,
+				573EC8BB2808471700D56983 /* Common */,
+				573EC8B8280846D200D56983 /* Home */,
+				573EC8B52808438A00D56983 /* Tab */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		573EC8B52808438A00D56983 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				573EC8B62808441400D56983 /* TabBarController.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		573EC8B8280846D200D56983 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				573EC8B92808470D00D56983 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		573EC8BB2808471700D56983 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				573EC8882808397800D56983 /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		573EC8BC280850B000D56983 /* BuzzInformation */ = {
+			isa = PBXGroup;
+			children = (
+				573EC8BE280850EA00D56983 /* BuzzInformationController.swift */,
+			);
+			path = BuzzInformation;
+			sourceTree = "<group>";
+		};
+		573EC8BD280850D800D56983 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				573EC8C02808512100D56983 /* MineViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		573EC8C22809093400D56983 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				573EC8842808397800D56983 /* AppDelegate.swift */,
+				573EC8862808397800D56983 /* SceneDelegate.swift */,
+				573EC88A2808397800D56983 /* Main.storyboard */,
+				573EC88D2808397C00D56983 /* Assets.xcassets */,
+				573EC88F2808397C00D56983 /* LaunchScreen.storyboard */,
+				573EC8922808397C00D56983 /* Info.plist */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +326,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				573EC8892808397800D56983 /* ViewController.swift in Sources */,
+				573EC8BA2808470D00D56983 /* HomeViewController.swift in Sources */,
+				573EC8892808397800D56983 /* BaseViewController.swift in Sources */,
+				573EC8B72808441400D56983 /* TabBarController.swift in Sources */,
+				573EC8C12808512100D56983 /* MineViewController.swift in Sources */,
+				573EC8BF280850EA00D56983 /* BuzzInformationController.swift in Sources */,
 				573EC8852808397800D56983 /* AppDelegate.swift in Sources */,
 				573EC8872808397800D56983 /* SceneDelegate.swift in Sources */,
 			);
@@ -440,6 +512,7 @@
 				DEVELOPMENT_TEAM = MPZ4AL947C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "dan-ji-xiao-zhu-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "单机小助";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -468,6 +541,7 @@
 				DEVELOPMENT_TEAM = MPZ4AL947C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "dan-ji-xiao-zhu-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "单机小助";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
