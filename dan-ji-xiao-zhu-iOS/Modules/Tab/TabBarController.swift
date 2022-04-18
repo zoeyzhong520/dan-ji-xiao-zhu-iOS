@@ -18,6 +18,21 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        createPage()
+        adaptationNavBar()
+        adaptationTabBar()
+    }
+    
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        title = item.title
+    }
+    
+}
+
+extension TabBarController {
+    
+    /// 构建页面
+    func createPage() {
         view.backgroundColor = .white
         
         // 首页
@@ -33,14 +48,9 @@ class TabBarController: UITabBarController {
         setTabBarItem(viewController: mine, tab: tabsArray[2])
         
         viewControllers = [home, buzzInfo, mine]
-        
     }
     
-    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        title = item.title
-    }
-    
-    // 创建tabBarItem
+    /// 创建tabBarItem
     func setTabBarItem(viewController: UIViewController, tab: [String: String]) {
         
         if let title = tab["title"] {
@@ -52,9 +62,27 @@ class TabBarController: UITabBarController {
         }
         
         if let selectedImage = tab["selectedImage"] {
-            print(selectedImage)
             viewController.tabBarItem.selectedImage = UIImage(named: selectedImage)?.withRenderingMode(.alwaysOriginal)
         }
         
     }
+    
+    /// TabBar适配
+    func adaptationTabBar() {
+        let appearance = UITabBarAppearance()
+        appearance.backgroundColor = .white
+        tabBar.standardAppearance = appearance
+        if #available(iOS 15, *) {
+            tabBar.scrollEdgeAppearance = appearance
+        }
+    }
+    
+    /// NavBar适配
+    func adaptationNavBar() {
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .white
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+    }
+    
 }

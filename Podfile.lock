@@ -1,0 +1,20 @@
+PODS:
+  - SnapKit (5.6.0)
+  - SwiftyFitsize (0.1.0)
+
+DEPENDENCIES:
+  - SnapKit (~> 5.6.0)
+  - SwiftyFitsize
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - SnapKit
+    - SwiftyFitsize
+
+SPEC CHECKSUMS:
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftyFitsize: 4727ad16946f5bb73219dd5f6453a17d85c530f0
+
+PODFILE CHECKSUM: fa41182736b9c5a6a10f6b9e5114c0d3fb61aebf
+
+COCOAPODS: 1.11.3
