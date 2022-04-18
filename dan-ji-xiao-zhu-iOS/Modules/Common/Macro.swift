@@ -8,6 +8,7 @@
 import UIKit
 import SwiftyFitsize
 import SnapKit
+import Kingfisher
 
 struct Macro {
     
@@ -84,13 +85,16 @@ struct Macro {
         static let screenHeight: CGFloat = UIScreen.main.bounds.size.height
         
         /// 状态栏高度
-        static let statusBarHeight: CGFloat = UIApplication.shared.windows.first?.windowScene?.statusBarManager?.statusBarFrame.height ?? 20
+        static let statusBarHeight: CGFloat = UIApplication.shared.windows.first?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
         
         /// 导航栏高度
         static let navBarHeight: CGFloat = 44
         
         /// 搜索框高度
         static let searchBarHeight: CGFloat = 45
+        
+        /// TabBar高度
+        static let tabBarHeight: CGFloat = UITabBarController().tabBar.frame.height
         
         /// 圆角值
         static let borderRadius: CGFloat = 3

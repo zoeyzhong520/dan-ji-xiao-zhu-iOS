@@ -42,8 +42,8 @@ class DJXZNavBar: UIView {
     /// 右侧按钮点击事件闭包
     fileprivate var customClick: DJXZClosure?
     
-    init(style: DJXZNavBarStyle = .home, customClick: DJXZClosure? = nil) {
-        super.init(frame: .zero)
+    init(frame: CGRect, style: DJXZNavBarStyle = .home, customClick: DJXZClosure? = nil) {
+        super.init(frame: frame)
         self.style = style
         self.customClick = customClick
         createPage()
@@ -59,10 +59,6 @@ extension DJXZNavBar {
     
     /// 构造页面
     fileprivate func createPage() {
-        self.snp.makeConstraints { make in
-            make.height.equalTo(Macro.size.statusBarHeight+Macro.size.searchBarHeight)
-        }
-        
         addSubview(searchBar)
         
         addSubview(rightBtn)

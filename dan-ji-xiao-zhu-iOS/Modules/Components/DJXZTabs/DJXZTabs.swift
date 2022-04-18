@@ -21,6 +21,18 @@ class DJXZTabs: UIView {
     /// 指示器高度
     fileprivate let indicatorHeight: CGFloat = 3
     
+    /// Tab标签文本字体
+    fileprivate let tabTextFont: UIFont = Macro.font.subhead
+    
+    /// Tab标签文本激活样式字体
+    fileprivate let tabTextFontActive: UIFont = Macro.font.headline
+    
+    /// Tab标签文本字体颜色
+    fileprivate let tabTextColor: UIColor = .black
+    
+    /// Tab标签文本激活样式字体颜色
+    fileprivate let tabTextColorActive: UIColor = Macro.color.primary
+    
     /// Tab点击事件闭包
     fileprivate var tabClick: DJXZIntClosure?
     
@@ -72,7 +84,9 @@ extension DJXZTabs {
             
             let label = UILabel(frame: .zero)
             label.text = item["title"] ?? ""
-            label.font = Macro.font.subhead
+            // 默认激活第一个Tab
+            label.font = index == 0 ? tabTextFontActive : tabTextFont
+            label.textColor = index == 0 ? tabTextColorActive : tabTextColor
             label.textAlignment = .center
             label.isUserInteractionEnabled = true
             label.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tabItemClick(_:))))
@@ -104,7 +118,6 @@ extension DJXZTabs {
         
         // 计算距左侧的间距
         var leftMargin: CGFloat = ((tabTextWidthArray.first ?? 16)-indicatorWidth)/2
-        
         for i in 0..<index {
             leftMargin += tabTextWidthArray[i]
         }
@@ -123,6 +136,16 @@ extension DJXZTabs {
         // 最后一页Tab
         if (scrollView.contentSize.width-leftMargin <= Macro.size.screenWidth/2) {
             scrollView.setContentOffset(CGPoint(x: scrollView.contentSize.width-Macro.size.screenWidth, y: 0), animated: true)
+        }
+        
+        // 获取scrollView的所有子视图
+        for subView in scrollView.subviews {
+            if (subView.isKind(of: UILabel.classForCoder())) {
+                // 筛选出UILabel的子视图
+                guard let label = subView as? UILabel else { return }
+                label.font = label.tag == index ? tabTextFontActive : tabTextFont
+                label.textColor = label.tag == index ? tabTextColorActive : tabTextColor
+            }
         }
         
         tabClick?(index)
