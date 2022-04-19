@@ -23,8 +23,16 @@ class GameBaseController: BaseViewController {
     /// CellReuseIdentifier
     fileprivate let cellReuseIdentifier = "CellReuseIdentifier"
     
+    /// 标题
+    fileprivate var _title = ""
+    
+    /// 游戏类型
+    fileprivate var _type = ""
+    
     init(title: String? = nil, type: String? = nil) {
         super.init(nibName: nil, bundle: nil)
+        _title = title ?? ""
+        _type = type ?? ""
         
         createPage()
         
@@ -36,9 +44,6 @@ class GameBaseController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        createPage()
-        
     }
     
 }
@@ -49,8 +54,8 @@ extension GameBaseController {
     fileprivate func createPage() {
         view.addSubview(tableView)
         tableView.snp.makeConstraints { make in
-            make.top.left.right.equalToSuperview()
-            make.bottom.equalTo(-Macro.size.navBarHeight-Macro.size.searchBarHeight-(Macro.size.statusBarHeight > 20 ? 20 : 0))
+            make.left.right.bottom.equalToSuperview()
+            make.top.equalTo(_type == "ALL" ? 16 : 0)
         }
     }
     

@@ -105,7 +105,22 @@ struct Macro {
     struct color {
         
         /// 主题颜色
-        static let primary = UIColor(red: 60/255, green: 137/255, blue: 247/255, alpha: 1.0)
+        static let primary = UIColor(red: 59/255, green: 144/255, blue: 208/255, alpha: 1.0)
+        
+        /// 背景白色
+        static let backWhite = UIColor.white
+        
+        /// 背景灰色
+        static let backGray = UIColor(red: 245/255, green: 245/255, blue: 245/255, alpha: 1.0)
+        
+        /// 字体黑色
+        static let textBlack = UIColor.black
+        
+        /// 字体灰色
+        static let textGray = UIColor(red: 104/255, green: 104/255, blue: 104/255, alpha: 1.0)
+        
+        /// 边框颜色
+        static let borderColor = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1.0)
         
     }
     

@@ -12,8 +12,10 @@ class GameListCell: UITableViewCell {
     /// 游戏封面图
     fileprivate lazy var gameImage: UIImageView = {
         let gameImage = UIImageView()
+        gameImage.layer.masksToBounds = true
+        gameImage.layer.cornerRadius = Macro.size.borderRadius
         gameImage.contentMode = .scaleToFill
-        gameImage.backgroundColor = .lightGray
+        gameImage.backgroundColor = Macro.color.backGray
         gameImage.kf.setImage(with: URL(string: "https://images.ali213.net/picfile/pic/2021/11/12/2021111240842112.jpg"))
         return gameImage
     }()
@@ -21,7 +23,7 @@ class GameListCell: UITableViewCell {
     /// 游戏标题
     fileprivate lazy var gameTitle: UILabel = {
         let gameTitle = UILabel()
-        gameTitle.font = Macro.font.searchBar
+        gameTitle.font = Macro.font.caption1
         gameTitle.numberOfLines = 2
         gameTitle.text = "侠盗猎车手/GTA/1/2/3/怀旧系列（罪恶都市，圣安地列斯）"
         return gameTitle
@@ -30,7 +32,8 @@ class GameListCell: UITableViewCell {
     /// 游戏简介
     fileprivate lazy var gameDesc: UILabel = {
         let gameDesc = UILabel()
-        gameDesc.font = Macro.font.tableRowSubline
+        gameDesc.textColor = Macro.color.textGray
+        gameDesc.font = Macro.font.caption2
         gameDesc.numberOfLines = 3
         gameDesc.text = "PC版《侠盗猎车手：罪恶都市》（Grand Theft Auto: Vice City，后文简称VC）这款游戏在许多方面都要好于其前作《侠盗猎车手III》（GTA3），而且在技术上也要领先于几个月前在PS2上发布的VC原作。类似PC版的GTA3，PC版VC与PS2版就内容而言完全一样。然而PC版VC确实提供了更好的视觉效果和操纵方式，缩短了读取时间，去掉了了一些华而不实的东西。"
         return gameDesc

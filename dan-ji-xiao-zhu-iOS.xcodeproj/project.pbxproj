@@ -30,6 +30,7 @@
 		57857F36280D164700E1C2A5 /* GameListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857F35280D164700E1C2A5 /* GameListController.swift */; };
 		57857F39280D167C00E1C2A5 /* GameBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857F38280D167C00E1C2A5 /* GameBaseController.swift */; };
 		57857F3B280D6A0300E1C2A5 /* GameListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857F3A280D6A0300E1C2A5 /* GameListCell.swift */; };
+		57857F3E280EB6CA00E1C2A5 /* DJXZCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857F3D280EB6CA00E1C2A5 /* DJXZCarousel.swift */; };
 		EECFA3E1105499B20CB409F1 /* Pods_dan_ji_xiao_zhu_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290360EF2D2218DE765C5BB /* Pods_dan_ji_xiao_zhu_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		57857F35280D164700E1C2A5 /* GameListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListController.swift; sourceTree = "<group>"; };
 		57857F38280D167C00E1C2A5 /* GameBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBaseController.swift; sourceTree = "<group>"; };
 		57857F3A280D6A0300E1C2A5 /* GameListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListCell.swift; sourceTree = "<group>"; };
+		57857F3D280EB6CA00E1C2A5 /* DJXZCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJXZCarousel.swift; sourceTree = "<group>"; };
 		9290360EF2D2218DE765C5BB /* Pods_dan_ji_xiao_zhu_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dan_ji_xiao_zhu_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4240501E25A7FCB3A4C6367 /* Pods-dan-ji-xiao-zhu-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dan-ji-xiao-zhu-iOS.debug.xcconfig"; path = "Target Support Files/Pods-dan-ji-xiao-zhu-iOS/Pods-dan-ji-xiao-zhu-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -231,6 +233,7 @@
 		57857F26280A8D2F00E1C2A5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				57857F3C280EB69F00E1C2A5 /* DJXZCarousel */,
 				57857F2C280ABC2900E1C2A5 /* DJXZTabs */,
 				57857F27280A8D3A00E1C2A5 /* DJXZNavBar */,
 			);
@@ -262,6 +265,14 @@
 				57857F3A280D6A0300E1C2A5 /* GameListCell.swift */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		57857F3C280EB69F00E1C2A5 /* DJXZCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				57857F3D280EB6CA00E1C2A5 /* DJXZCarousel.swift */,
+			);
+			path = DJXZCarousel;
 			sourceTree = "<group>";
 		};
 		719C387DD7C33AC1EE0CEA3E /* Pods */ = {
@@ -465,6 +476,7 @@
 				573EC8B72808441400D56983 /* TabBarController.swift in Sources */,
 				57857F34280D151400E1C2A5 /* GameADController.swift in Sources */,
 				573EC8C12808512100D56983 /* MineViewController.swift in Sources */,
+				57857F3E280EB6CA00E1C2A5 /* DJXZCarousel.swift in Sources */,
 				57857F3B280D6A0300E1C2A5 /* GameListCell.swift in Sources */,
 				57857F32280BF7E500E1C2A5 /* Extensions.swift in Sources */,
 				573EC8BF280850EA00D56983 /* BuzzInformationController.swift in Sources */,

@@ -19,8 +19,8 @@ class HomeViewController: BaseViewController {
     
     /// Tabs
     fileprivate lazy var tabs: DJXZTabs = {
-        let tabs = DJXZTabs(frame: CGRect(x: 0, y: navBar.frame.maxY, width: Macro.size.screenWidth, height: Macro.size.navBarHeight)) { tabIndex in
-            print("Tab点击:\(tabIndex)")
+        let tabs = DJXZTabs(frame: CGRect(x: 0, y: navBar.frame.maxY, width: Macro.size.screenWidth, height: Macro.size.navBarHeight)) { [unowned self] tabIndex in
+            self.pageViewController.setViewControllers([self.viewControllers[tabIndex]], direction: tabIndex > tagOfViewInViewController() ? .forward : .reverse, animated: true)
         }
         return tabs
     }()
@@ -28,7 +28,7 @@ class HomeViewController: BaseViewController {
     /// 创建UIPageViewController
     fileprivate lazy var pageViewController: UIPageViewController = {
         let pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: [UIPageViewController.OptionsKey.interPageSpacing: NSNumber(value: 0)])
-        pageViewController.view.frame = CGRect(x: 0, y: tabs.frame.maxY, width: Macro.size.screenWidth, height: view.bounds.height)
+        pageViewController.view.frame = CGRect(x: 0, y: tabs.frame.maxY, width: Macro.size.screenWidth, height: Macro.size.screenHeight-Macro.size.statusBarHeight-Macro.size.navBarHeight*2-Macro.size.tabBarHeight)
         pageViewController.delegate = self
         pageViewController.dataSource = self
         
@@ -38,9 +38,11 @@ class HomeViewController: BaseViewController {
             } else {
                 viewControllers.append(GameListController.init(title: item["title"] ?? "", type: item["type"] ?? ""))
             }
+            // 给控制器中的view分别设置tag，便于区分
+            viewControllers[index].view.tag = index
         }
         
-        pageViewController.setViewControllers([viewControllers[0]], direction: .reverse, animated: false)
+        pageViewController.setViewControllers([viewControllers[0]], direction: .forward, animated: false)
         
         return pageViewController
     }()
@@ -48,7 +50,7 @@ class HomeViewController: BaseViewController {
     /// 初始化UIPageViewController要展示的控制器
     fileprivate var viewControllers: [GameBaseController] = []
     
-    /// 选中的子控制器
+    /// 选中的子控制器下标
     fileprivate var currentPage = 0
     
     override func viewDidLoad() {
@@ -96,6 +98,12 @@ extension HomeViewController {
         return currentPageIndex
     }
     
+    /// 获取控制器里的view的tag
+    fileprivate func tagOfViewInViewController() -> Int {
+        guard let tag = pageViewController.viewControllers?.first?.view.tag else { return 0 }
+        return tag
+    }
+    
 }
 
 extension HomeViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
@@ -107,7 +115,10 @@ extension HomeViewController: UIPageViewControllerDelegate, UIPageViewController
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        
+        if completed {
+            // 更新Tabs标签视图
+            tabs.activeTabIndex = tagOfViewInViewController()
+        }
     }
     
     func pageViewControllerSupportedInterfaceOrientations(_ pageViewController: UIPageViewController) -> UIInterfaceOrientationMask {
@@ -144,14 +155,6 @@ extension HomeViewController: UIPageViewControllerDelegate, UIPageViewController
         currentPage = currentPage+1
         
         return viewControllers[currentPage]
-    }
-    
-    func presentationCount(for pageViewController: UIPageViewController) -> Int {
-        return pageViewController.viewControllers?.count ?? 0
-    }
-    
-    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-        return currentPage
     }
     
 }

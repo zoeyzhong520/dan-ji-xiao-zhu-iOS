@@ -33,6 +33,13 @@ class DJXZTabs: UIView {
     /// Tab标签文本激活样式字体颜色
     fileprivate let tabTextColorActive: UIColor = Macro.color.primary
     
+    /// 当前选择的Tab位置下标，供外部更新
+    var activeTabIndex: Int = 0 {
+        didSet {
+            reload(index: activeTabIndex)
+        }
+    }
+    
     /// Tab点击事件闭包
     fileprivate var tabClick: DJXZIntClosure?
     
@@ -112,10 +119,8 @@ extension DJXZTabs {
         }
     }
     
-    /// Tab点击事件
-    @objc fileprivate func tabItemClick(_ gesture: UITapGestureRecognizer) {
-        guard let index = gesture.view?.tag else { return }
-        
+    /// 根据Tab选择的标签更新视图
+    fileprivate func reload(index: Int) {
         // 计算距左侧的间距
         var leftMargin: CGFloat = ((tabTextWidthArray.first ?? 16)-indicatorWidth)/2
         for i in 0..<index {
@@ -147,7 +152,12 @@ extension DJXZTabs {
                 label.textColor = label.tag == index ? tabTextColorActive : tabTextColor
             }
         }
-        
+    }
+    
+    /// Tab点击事件
+    @objc fileprivate func tabItemClick(_ gesture: UITapGestureRecognizer) {
+        guard let index = gesture.view?.tag else { return }
+        reload(index: index)
         tabClick?(index)
     }
     
