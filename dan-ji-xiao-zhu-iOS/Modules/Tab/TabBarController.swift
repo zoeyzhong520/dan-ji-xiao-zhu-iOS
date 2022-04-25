@@ -10,8 +10,8 @@ import UIKit
 class TabBarController: UITabBarController {
     
     fileprivate let tabsArray = [
-        ["title": "游戏推荐", "image": "icon_home", "selectedImage": "icon_home_selected"],
-        ["title": "热评资讯", "image": "icon_buzzInfo", "selectedImage": "icon_buzzInfo_selected"],
+        ["title": "游戏", "image": "icon_home", "selectedImage": "icon_home_selected"],
+        ["title": "资讯", "image": "icon_buzzInfo", "selectedImage": "icon_buzzInfo_selected"],
         ["title": "我的", "image": "icon_mine", "selectedImage": "icon_mine_selected"]
     ]
     

@@ -99,6 +99,12 @@ struct Macro {
         /// 圆角值
         static let borderRadius: CGFloat = 3
         
+        /// 间距
+        static let margin: CGFloat = 16
+        
+        /// 广告位高度
+        static let adHeight: CGFloat = 150
+        
     }
     
     /// 颜色
@@ -116,11 +122,17 @@ struct Macro {
         /// 字体黑色
         static let textBlack = UIColor.black
         
+        /// 字体白色
+        static let textWhite = UIColor.white
+        
         /// 字体灰色
         static let textGray = UIColor(red: 104/255, green: 104/255, blue: 104/255, alpha: 1.0)
         
         /// 边框颜色
         static let borderColor = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1.0)
+        
+        /// 遮罩颜色
+        static let maskColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
         
     }
     

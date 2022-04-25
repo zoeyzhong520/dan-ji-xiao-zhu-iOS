@@ -7,18 +7,25 @@
 
 import UIKit
 
-/// 遵循这个协议，可以隐藏导航栏
-protocol HideNavBarProtocol where Self: UIViewController {}
-
 class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        createPage()
         
     }
 
 
+}
+
+extension BaseViewController {
+    
+    /// 构建页面
+    fileprivate func createPage() {
+        view.backgroundColor = Macro.color.backGray
+    }
+    
 }
 

@@ -14,7 +14,7 @@ class GameListCell: UITableViewCell {
         let gameImage = UIImageView()
         gameImage.layer.masksToBounds = true
         gameImage.layer.cornerRadius = Macro.size.borderRadius
-        gameImage.contentMode = .scaleToFill
+        gameImage.contentMode = .scaleAspectFill
         gameImage.backgroundColor = Macro.color.backGray
         gameImage.kf.setImage(with: URL(string: "https://images.ali213.net/picfile/pic/2021/11/12/2021111240842112.jpg"))
         return gameImage
@@ -40,7 +40,7 @@ class GameListCell: UITableViewCell {
     }()
     
     /// GameListCell的高度
-    static let gameListCellHeight: CGFloat = 110
+    static let cellHeight: CGFloat = 110
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

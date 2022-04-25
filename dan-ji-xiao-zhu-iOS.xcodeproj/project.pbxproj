@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		573BCEC82815567500E76440 /* BuzzInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573BCEC72815567500E76440 /* BuzzInformationCell.swift */; };
 		573EC8852808397800D56983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8842808397800D56983 /* AppDelegate.swift */; };
 		573EC8872808397800D56983 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8862808397800D56983 /* SceneDelegate.swift */; };
 		573EC8892808397800D56983 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8882808397800D56983 /* BaseViewController.swift */; };
@@ -31,6 +32,7 @@
 		57857F39280D167C00E1C2A5 /* GameBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857F38280D167C00E1C2A5 /* GameBaseController.swift */; };
 		57857F3B280D6A0300E1C2A5 /* GameListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857F3A280D6A0300E1C2A5 /* GameListCell.swift */; };
 		57857F3E280EB6CA00E1C2A5 /* DJXZCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857F3D280EB6CA00E1C2A5 /* DJXZCarousel.swift */; };
+		57857F402810364600E1C2A5 /* GameDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857F3F2810364500E1C2A5 /* GameDetailController.swift */; };
 		EECFA3E1105499B20CB409F1 /* Pods_dan_ji_xiao_zhu_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290360EF2D2218DE765C5BB /* Pods_dan_ji_xiao_zhu_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		3DCB8D926422471D0E52004D /* Pods-dan-ji-xiao-zhu-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dan-ji-xiao-zhu-iOS.release.xcconfig"; path = "Target Support Files/Pods-dan-ji-xiao-zhu-iOS/Pods-dan-ji-xiao-zhu-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		573BCEC72815567500E76440 /* BuzzInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzInformationCell.swift; sourceTree = "<group>"; };
 		573EC8812808397800D56983 /* dan-ji-xiao-zhu-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dan-ji-xiao-zhu-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		573EC8842808397800D56983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		573EC8862808397800D56983 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 		57857F38280D167C00E1C2A5 /* GameBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBaseController.swift; sourceTree = "<group>"; };
 		57857F3A280D6A0300E1C2A5 /* GameListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListCell.swift; sourceTree = "<group>"; };
 		57857F3D280EB6CA00E1C2A5 /* DJXZCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJXZCarousel.swift; sourceTree = "<group>"; };
+		57857F3F2810364500E1C2A5 /* GameDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailController.swift; sourceTree = "<group>"; };
 		9290360EF2D2218DE765C5BB /* Pods_dan_ji_xiao_zhu_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dan_ji_xiao_zhu_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4240501E25A7FCB3A4C6367 /* Pods-dan-ji-xiao-zhu-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dan-ji-xiao-zhu-iOS.debug.xcconfig"; path = "Target Support Files/Pods-dan-ji-xiao-zhu-iOS/Pods-dan-ji-xiao-zhu-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -205,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				573EC8BE280850EA00D56983 /* BuzzInformationController.swift */,
+				573BCEC72815567500E76440 /* BuzzInformationCell.swift */,
 			);
 			path = BuzzInformation;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 				57857F35280D164700E1C2A5 /* GameListController.swift */,
 				57857F38280D167C00E1C2A5 /* GameBaseController.swift */,
 				57857F3A280D6A0300E1C2A5 /* GameListCell.swift */,
+				57857F3F2810364500E1C2A5 /* GameDetailController.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -468,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57857F29280A8D5D00E1C2A5 /* DJXZNavBar.swift in Sources */,
+				573BCEC82815567500E76440 /* BuzzInformationCell.swift in Sources */,
 				57857F2528097BC400E1C2A5 /* Macro.swift in Sources */,
 				573EC8BA2808470D00D56983 /* HomeViewController.swift in Sources */,
 				573EC8892808397800D56983 /* BaseViewController.swift in Sources */,
@@ -476,6 +483,7 @@
 				573EC8B72808441400D56983 /* TabBarController.swift in Sources */,
 				57857F34280D151400E1C2A5 /* GameADController.swift in Sources */,
 				573EC8C12808512100D56983 /* MineViewController.swift in Sources */,
+				57857F402810364600E1C2A5 /* GameDetailController.swift in Sources */,
 				57857F3E280EB6CA00E1C2A5 /* DJXZCarousel.swift in Sources */,
 				57857F3B280D6A0300E1C2A5 /* GameListCell.swift in Sources */,
 				57857F32280BF7E500E1C2A5 /* Extensions.swift in Sources */,

@@ -73,7 +73,12 @@ extension GameBaseController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return GameListCell.gameListCellHeight
+        return GameListCell.cellHeight
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // 打开游戏详情
+        GameDetailController.openGameDetail(objectId: "wsxedc")
     }
     
 }
