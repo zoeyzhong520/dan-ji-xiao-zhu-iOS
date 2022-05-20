@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "SwiftyFitsize.h"
 
 FOUNDATION_EXPORT double SwiftyFitsizeVersionNumber;
 FOUNDATION_EXPORT const unsigned char SwiftyFitsizeVersionString[];

@@ -1,7 +1,7 @@
 PODS:
   - Kingfisher (6.3.1)
   - SnapKit (5.6.0)
-  - SwiftyFitsize (0.1.0)
+  - SwiftyFitsize (1.4.0)
 
 DEPENDENCIES:
   - Kingfisher
@@ -17,7 +17,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-  SwiftyFitsize: 4727ad16946f5bb73219dd5f6453a17d85c530f0
+  SwiftyFitsize: 7b12144a362b0c233d8fb8817e54988a60d92b02
 
 PODFILE CHECKSUM: 56fdde1a737263287cd2ff60f71941aff2743cad
 
