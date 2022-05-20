@@ -21,6 +21,8 @@
 		573EC8BA2808470D00D56983 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8B92808470D00D56983 /* HomeViewController.swift */; };
 		573EC8BF280850EA00D56983 /* BuzzInformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8BE280850EA00D56983 /* BuzzInformationController.swift */; };
 		573EC8C12808512100D56983 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8C02808512100D56983 /* MineViewController.swift */; };
+		575088C928373B32005FDF76 /* uploadPgyer.sh in Resources */ = {isa = PBXBuildFile; fileRef = 575088C728373B32005FDF76 /* uploadPgyer.sh */; };
+		575088CA28373B32005FDF76 /* AutoPackageScript.sh in Resources */ = {isa = PBXBuildFile; fileRef = 575088C828373B32005FDF76 /* AutoPackageScript.sh */; };
 		57857F2528097BC400E1C2A5 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857F2428097BC400E1C2A5 /* Macro.swift */; };
 		57857F29280A8D5D00E1C2A5 /* DJXZNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857F28280A8D5D00E1C2A5 /* DJXZNavBar.swift */; };
 		57857F2B280AB92B00E1C2A5 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857F2A280AB92B00E1C2A5 /* Closures.swift */; };
@@ -73,6 +75,8 @@
 		573EC8B92808470D00D56983 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		573EC8BE280850EA00D56983 /* BuzzInformationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzInformationController.swift; sourceTree = "<group>"; };
 		573EC8C02808512100D56983 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		575088C728373B32005FDF76 /* uploadPgyer.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = uploadPgyer.sh; sourceTree = "<group>"; };
+		575088C828373B32005FDF76 /* AutoPackageScript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = AutoPackageScript.sh; sourceTree = "<group>"; };
 		57857F2428097BC400E1C2A5 /* Macro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
 		57857F28280A8D5D00E1C2A5 /* DJXZNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJXZNavBar.swift; sourceTree = "<group>"; };
 		57857F2A280AB92B00E1C2A5 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 		573EC8782808397800D56983 = {
 			isa = PBXGroup;
 			children = (
+				575088C828373B32005FDF76 /* AutoPackageScript.sh */,
+				575088C728373B32005FDF76 /* uploadPgyer.sh */,
 				573EC8832808397800D56983 /* dan-ji-xiao-zhu-iOS */,
 				573EC89A2808397D00D56983 /* dan-ji-xiao-zhu-iOSTests */,
 				573EC8A42808397D00D56983 /* dan-ji-xiao-zhu-iOSUITests */,
@@ -407,6 +413,8 @@
 				573EC8912808397C00D56983 /* LaunchScreen.storyboard in Resources */,
 				573EC88E2808397C00D56983 /* Assets.xcassets in Resources */,
 				573EC88C2808397800D56983 /* Main.storyboard in Resources */,
+				575088CA28373B32005FDF76 /* AutoPackageScript.sh in Resources */,
+				575088C928373B32005FDF76 /* uploadPgyer.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +679,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 533N54GNY3;
+				DEVELOPMENT_TEAM = NPNXQ5XAYY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "dan-ji-xiao-zhu-iOS/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "单机小助";
@@ -685,7 +693,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zoeyzhong520.dan-ji-xiao-zhu-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoneTech.voiceCopy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -703,7 +711,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 533N54GNY3;
+				DEVELOPMENT_TEAM = NPNXQ5XAYY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "dan-ji-xiao-zhu-iOS/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "单机小助";
@@ -717,7 +725,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zoeyzhong520.dan-ji-xiao-zhu-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoneTech.voiceCopy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
