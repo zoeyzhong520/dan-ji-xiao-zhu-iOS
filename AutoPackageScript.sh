@@ -33,27 +33,27 @@ LOGIN_KEYCHAIN=~/Library/Keychains/login.keychain-db
 LOGIN_PASSWORD=0805
 
 # 先更新pod库
-#echo "更新pod库😊😊..."
-#if [ "$1" = "0" ]; then
-#    echo "不更新Pod库......"
-#else
-#    tempDate=`date +%s`
-#
-#    temp_log_path="$(pwd)/TempPath"
-#    ./tiensinstall.sh package $tempDate
-#
-#    # 判断是否安装成功
-#    if cat $temp_log_path/$tempDate.log | grep "Pod installation complete!" > /dev/null
-#    then
-#        echo "pod install成功 🌹🌹🌹"
-#        rm -rf $temp_log_path
-#    else
-#        echo "pod install失败 ⚠️⚠️⚠️"
-#        rm -rf $temp_log_path
-#        exit 1
-#    fi
-#fi
-#
+echo "更新pod库😊😊..."
+if [ "$1" = "0" ]; then
+    echo "不更新Pod库......"
+else
+    tempDate=`date +%s`
+
+    temp_log_path="$(pwd)/TempPath"
+    ./tiensinstall.sh package $tempDate
+
+    # 判断是否安装成功
+    if cat $temp_log_path/$tempDate.log | grep "Pod installation complete!" > /dev/null
+    then
+        echo "pod install成功 🌹🌹🌹"
+        rm -rf $temp_log_path
+    else
+        echo "pod install失败 ⚠️⚠️⚠️"
+        rm -rf $temp_log_path
+        exit 1
+    fi
+fi
+
 #echo "更新pod库完成😊😊..."
 
 
