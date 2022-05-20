@@ -23,6 +23,7 @@
 		573EC8C12808512100D56983 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573EC8C02808512100D56983 /* MineViewController.swift */; };
 		575088C928373B32005FDF76 /* uploadPgyer.sh in Resources */ = {isa = PBXBuildFile; fileRef = 575088C728373B32005FDF76 /* uploadPgyer.sh */; };
 		575088CA28373B32005FDF76 /* AutoPackageScript.sh in Resources */ = {isa = PBXBuildFile; fileRef = 575088C828373B32005FDF76 /* AutoPackageScript.sh */; };
+		575088CC28373F4E005FDF76 /* tiensinstall.sh in Resources */ = {isa = PBXBuildFile; fileRef = 575088CB28373F4E005FDF76 /* tiensinstall.sh */; };
 		57857F2528097BC400E1C2A5 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857F2428097BC400E1C2A5 /* Macro.swift */; };
 		57857F29280A8D5D00E1C2A5 /* DJXZNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857F28280A8D5D00E1C2A5 /* DJXZNavBar.swift */; };
 		57857F2B280AB92B00E1C2A5 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857F2A280AB92B00E1C2A5 /* Closures.swift */; };
@@ -77,6 +78,7 @@
 		573EC8C02808512100D56983 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		575088C728373B32005FDF76 /* uploadPgyer.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = uploadPgyer.sh; sourceTree = "<group>"; };
 		575088C828373B32005FDF76 /* AutoPackageScript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = AutoPackageScript.sh; sourceTree = "<group>"; };
+		575088CB28373F4E005FDF76 /* tiensinstall.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = tiensinstall.sh; sourceTree = "<group>"; };
 		57857F2428097BC400E1C2A5 /* Macro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
 		57857F28280A8D5D00E1C2A5 /* DJXZNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJXZNavBar.swift; sourceTree = "<group>"; };
 		57857F2A280AB92B00E1C2A5 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		573EC8782808397800D56983 = {
 			isa = PBXGroup;
 			children = (
+				575088CB28373F4E005FDF76 /* tiensinstall.sh */,
 				575088C828373B32005FDF76 /* AutoPackageScript.sh */,
 				575088C728373B32005FDF76 /* uploadPgyer.sh */,
 				573EC8832808397800D56983 /* dan-ji-xiao-zhu-iOS */,
@@ -412,6 +415,7 @@
 			files = (
 				573EC8912808397C00D56983 /* LaunchScreen.storyboard in Resources */,
 				573EC88E2808397C00D56983 /* Assets.xcassets in Resources */,
+				575088CC28373F4E005FDF76 /* tiensinstall.sh in Resources */,
 				573EC88C2808397800D56983 /* Main.storyboard in Resources */,
 				575088CA28373B32005FDF76 /* AutoPackageScript.sh in Resources */,
 				575088C928373B32005FDF76 /* uploadPgyer.sh in Resources */,
